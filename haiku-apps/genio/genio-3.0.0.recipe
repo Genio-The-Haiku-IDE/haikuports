@@ -14,10 +14,10 @@ COPYRIGHT="2022-2024 The Genio Team"
 LICENSE="BSD (3-clause)
 	MIT"
 REVISION="1"
-SOURCE_URI="https://github.com/Genio-The-Haiku-IDE/Genio/archive/v2.1.tar.gz"
+SOURCE_URI="https://github.com/Genio-The-Haiku-IDE/Genio/archive/v3.tar.gz"
 CHECKSUM_SHA256="0ffdff036c7dd7abf9221d2b93c3419d9451ca9b45f2eb36137c0ff58a5ab079"
-SOURCE_FILENAME="Genio-v2.1.tar.gz"
-SOURCE_DIR="Genio-2.1"
+SOURCE_FILENAME="Genio-v3.tar.gz"
+SOURCE_DIR="Genio-3"
 
 ARCHITECTURES="all !x86_gcc2"
 SECONDARY_ARCHITECTURES="x86"
@@ -30,6 +30,7 @@ REQUIRES="
 	haiku${secondaryArchSuffix}
 	gcc${secondaryArchSuffix}_syslibs_devel
 	llvm17${secondaryArchSuffix}_clang
+	lib:libeditorconfig$secondaryArchSuffix
 	lib:liblexilla$secondaryArchSuffix >= 5.2.4
 	lib:libgit2$secondaryArchSuffix
 	lib:libyaml_cpp$secondaryArchSuffix
@@ -37,6 +38,7 @@ REQUIRES="
 
 BUILD_REQUIRES="
 	haiku${secondaryArchSuffix}_devel
+	devel:libeditorconfig
 	devel:liblexilla$secondaryArchSuffix >= 5.2.4
 	devel:libgit2$secondaryArchSuffix >= 1.5
 	devel:libyaml_cpp$secondaryArchSuffix >= 0.8
